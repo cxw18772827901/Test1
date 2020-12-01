@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_sel"
+        android:gravity="center"
+        android:paddingTop="12.5dp"
+        android:paddingBottom="12.5dp"
+        android:text="关注"
+        android:textColor="@color/cl_333333"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_eee"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_sel"
+        android:gravity="center"
+        android:paddingTop="12.5dp"
+        android:paddingBottom="12.5dp"
+        android:text="@string/cancel"
+        android:textColor="@color/cl_999999"
+        android:textSize="14sp"/>
+</LinearLayout>

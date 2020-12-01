@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:orientation="horizontal">
+
+    <!--android:background="@color/cl_white"-->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_second"
+            tools:ignore="ContentDescription"/>
+        <!--、  <com.hgd.hgdcomic.wedjet.roundedimageview.CustomShapeImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    app:borderColor="@color/colorAccent"
+                    app:imageBorderWidth="3dp"
+                    app:onlyDrawBorder="false"
+                    app:roundRadius="5dp"
+                    app:shape="rectangle"/>-->
+        <com.my.mymh.wedjet.roundedimageview.CustomShapeImageView
+            android:id="@+id/iv_second"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/ic_holder1"
+            app:borderColor="@color/cl_bbb"
+            app:imageBorderWidth="0.5dp"
+            app:onlyDrawBorder="false"
+            app:roundRadius="5dp"
+            app:shape="rectangle"
+            tools:ignore="ContentDescription"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--android:background="@color/cl_white"-->
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_first"
+            tools:ignore="ContentDescription"/>
+
+        <com.my.mymh.wedjet.roundedimageview.CustomShapeImageView
+            android:id="@+id/iv_first"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/ic_holder1"
+            app:borderColor="@color/cl_bbb"
+            app:imageBorderWidth="0.5dp"
+            app:onlyDrawBorder="false"
+            app:roundRadius="5dp"
+            app:shape="rectangle"
+            tools:ignore="ContentDescription"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!--android:background="@color/cl_white"-->
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_third"
+            tools:ignore="ContentDescription"/>
+
+        <com.my.mymh.wedjet.roundedimageview.CustomShapeImageView
+            android:id="@+id/iv_third"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/ic_holder1"
+            app:borderColor="@color/cl_bbb"
+            app:imageBorderWidth="0.5dp"
+            app:onlyDrawBorder="false"
+            app:roundRadius="5dp"
+            app:shape="rectangle"
+            tools:ignore="ContentDescription"/>
+    </FrameLayout>
+</LinearLayout>

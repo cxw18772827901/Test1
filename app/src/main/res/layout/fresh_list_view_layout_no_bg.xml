@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.my.mymh.wedjet.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableAutoLoadMore="@bool/auto_fresh"
+    app:srlEnableFooterFollowWhenLoadFinished="false">
+    <!--android:background="@color/cl_eee"-->
+
+    <com.my.mymh.wedjet.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--app:srlDrawableProgress="@drawable/ic_progress_holder"/>-->
+    <!--<com.dave.project.wedjet.PinnedSectionListView-->
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+    <com.my.mymh.wedjet.smartrefresh.layout.footer.ClassicsFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlClassicsSpinnerStyle="Translate"/>
+</com.my.mymh.wedjet.smartrefresh.layout.SmartRefreshLayout>

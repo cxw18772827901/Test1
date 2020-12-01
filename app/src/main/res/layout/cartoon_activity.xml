@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_666">
+
+    <!--android:overScrollMode="never"--><!--需要这个属性-->
+    <!--<com.test.project.wedjet.CartoonOverScrollListView-->
+    <!--<com.hgd.hgdcomic.wedjet.ZoomNormalListView-->
+    <com.my.mymh.wedjet.ZoomAdvancedListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cl_no_color"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        app:max_zoom_scale="2.0"
+        app:min_zoom_scale="0.4"
+        app:normal_scale="1.0"
+        app:zoom_scale="2.0"
+        app:zoom_scale_duration="300"
+        app:zoom_to_small_scale_duration="500"
+        app:zoom_to_small_times="6"/>
+
+    <include layout="@layout/title"/>
+
+    <LinearLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cl_black"
+        android:orientation="vertical">
+
+        <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--style="?android:attr/progressBarStyleHorizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2.5dp"-->
+        <!--android:layout_marginLeft="35dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginRight="35dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:max="100"-->
+        <!--android:progress="10"-->
+        <!--android:progressDrawable="@drawable/progressbar1"-->
+        <!--android:visibility="gone"/>-->
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="5dp"
+            android:max="100"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:thumb="@drawable/seekbar_thumb"
+            android:thumbOffset="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/tv_pre"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_left"/>
+            <!--android:includeFontPadding="false"-->
+            <!--android:paddingLeft="20dp"-->、
+            <!--android:paddingRight="20dp"/>-->
+            <!--android:text="上一章"-->
+            <!--android:maxLines="1"-->
+            <!--android:gravity="center"-->
+            <!--android:drawableLeft="@drawable/btn_back_white"-->
+            <!--android:textColor="@color/cl_white"-->
+            <!--android:textSize="18sp"/>-->
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/cl_999999"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/tv_change"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_change_land"/>
+
+            <ImageView
+                android:id="@+id/tv_catalog"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_catalog"/>
+            <!--android:gravity="center"-->
+            <!--android:includeFontPadding="false"-->
+            <!--android:maxLines="1"-->
+            <!--android:text="目录"-->
+            <!--android:textColor="@color/cl_white"-->
+            <!--android:textSize="18sp"/>-->
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/cl_999999"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/tv_next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_right"/>
+            <!--android:drawableRight="@drawable/btn_back_white_r"-->
+            <!--android:gravity="center"-->
+            <!--android:includeFontPadding="false"-->
+            <!--android:maxLines="1"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:paddingRight="20dp"-->
+            <!--android:text="下一章"-->
+            <!--android:textColor="@color/cl_white"-->
+            <!--android:textSize="18sp"/>-->
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

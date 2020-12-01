@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="12.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_sj"
+        tools:ignore="ContentDescription,RtlHardcoded"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:background="@color/cl_main_red"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_pencil"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="7.5dp"
+            android:text="书架编辑"
+            android:textColor="@color/cl_white"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_record"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingTop="7.5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:text="阅读记录"
+            android:textColor="@color/cl_white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

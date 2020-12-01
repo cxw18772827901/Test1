@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_f0f0f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/tab234_title_layout" />
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/cl_white"
+            android:orientation="horizontal">
+
+            <com.my.mymh.wedjet.RoundImageView
+                android:id="@+id/iv_head"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="17.5dp"
+                android:src="@drawable/ic_defult_header" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableRight="@drawable/ic_gender_sel"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="杀死一只知更鸟"
+                android:textColor="@color/cl_222222"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_listen"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_listen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="marquee"
+                android:gravity="left|center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/str_listener"
+                android:textColor="@color/cl_999999"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+        <!--android:layout_marginTop="8dp"-->
+        <TextView
+            android:id="@+id/tv_care"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/cl_white"
+            android:drawableLeft="@drawable/ic_care"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:drawablePadding="13.5dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="13dp"
+            android:paddingRight="20dp"
+            android:text="我的关注"
+            android:textColor="@color/cl_222222"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/cl_white"
+            android:drawableLeft="@drawable/ic_update"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="检查更新"
+            android:textColor="@color/cl_222222"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/cl_white"
+            android:drawableLeft="@drawable/ic_qr"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="二维码"
+            android:textColor="@color/cl_222222"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/cl_white"
+            android:drawableLeft="@drawable/ic_share_link"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="分享"
+            android:textColor="@color/cl_222222"
+            android:textSize="17sp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_report"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/cl_white"
+            android:drawableLeft="@drawable/ic_retroaction"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="问题反馈"
+            android:textColor="@color/cl_222222"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="0.5dp"
+            android:background="@color/cl_white"
+            android:drawableLeft="@drawable/ic_shezhi"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="设置"
+            android:textColor="@color/cl_222222"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingTop="45dp"
+            android:paddingBottom="30dp"
+            android:text="分享至"
+            android:textColor="#313131"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="分享至..."
+            android:textColor="#313131"
+            android:textSize="13dp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c9c9c9"
+            android:visibility="gone"/>
+
+        <!-- <GridView
+             android:id="@+id/gv_share"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#fff"
+             android:listSelector="@android:color/transparent"
+             android:numColumns="4"
+             android:paddingBottom="20dp"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="10dp"
+             android:verticalSpacing="5dp" />-->
+        <!--android:background="@drawable/direct_dialog_shape"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/cl_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/ll_share_to_qq_f"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.my.mymh.wedjet.CircleImageView
+                    android:id="@+id/iv_share_to_qq_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/share_to_qq_friend"/>
+
+                <TextView
+                    style="@style/zhubo_direct_tv_c"
+                    android:text="QQ好友"
+                    android:textColor="@color/cl_666"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_share_to_qq_c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.my.mymh.wedjet.CircleImageView
+                    android:id="@+id/iv_share_to_qq_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/share_to_qq_friend_circle"/>
+
+                <TextView
+                    style="@style/zhubo_direct_tv_c"
+                    android:text="QQ空间"
+                    android:textColor="@color/cl_666"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_share_to_wx_f"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.my.mymh.wedjet.CircleImageView
+                    android:id="@+id/iv_share_to_wx_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/share_to_wx_friend"/>
+
+                <TextView
+                    style="@style/zhubo_direct_tv_c"
+                    android:text="微信好友"
+                    android:textColor="@color/cl_666"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_share_to_wx_c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.my.mymh.wedjet.CircleImageView
+                    android:id="@+id/iv_share_to_wx_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/share_to_wx_friend_circle"/>
+
+                <TextView
+                    android:id="@+id/tv_mute"
+                    style="@style/zhubo_direct_tv_c"
+                    android:text="微信朋友圈"
+                    android:textColor="@color/cl_666"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#1bad88"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_cha"/>
+    </FrameLayout>
+</FrameLayout>

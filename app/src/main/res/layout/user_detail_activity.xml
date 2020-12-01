@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_holder"
+            tools:ignore="ContentDescription"/>
+
+        <View
+            android:id="@+id/view_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <include layout="@layout/user_detail_title"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="59dp"
+                    android:layout_height="59dp"
+                    android:background="@drawable/head_bg">
+
+                    <com.my.mymh.wedjet.RoundImageView
+                        android:id="@+id/iv_head"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_holder"/>
+                    <!--app:civ_border_color="@color/cl_white"-->
+                    <!--app:civ_border_overlay="false"-->
+                    <!--app:civ_border_width="2dp"/>-->
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+
+                    <FrameLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_get_good"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/user_num_bg"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="0个"
+                            android:textColor="@color/cl_white"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="收到的赞"
+                            android:textColor="@color/cl_white"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_get_care"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/user_num_bg"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="0个"
+                            android:textColor="@color/cl_white"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="关注他的"
+                            android:textColor="@color/cl_white"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <include
+        layout="@layout/fresh_recycle_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_care"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cl_white"
+        android:gravity="center"
+        android:text="十 关注"
+        android:textColor="@color/cl_main_red"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:ignore="HardcodedText"/>
+</LinearLayout>

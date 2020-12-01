@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/cartoon_trans"
+        android:visibility="visible"/>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/cl_white"-->
+    <!--android:paddingTop="15dp"-->
+    <!--android:paddingRight="15dp"-->
+    <!--android:paddingBottom="15dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_title1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:drawableLeft="@drawable/title_drawable"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:includeFontPadding="false"-->
+    <!--android:maxLines="1"-->
+    <!--android:paddingLeft="2dp"-->
+    <!--android:text="简介"-->
+    <!--android:textColor="@color/cl_222222"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/cl_white"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_desc"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ellipsize="end"-->
+    <!--android:includeFontPadding="false"-->
+    <!--android:lineSpacingExtra="2.5dp"-->
+    <!--android:maxLines="3"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="15dp"-->
+    <!--android:paddingBottom="15dp"-->
+    <!--android:text="desc"-->
+    <!--android:textColor="@color/cl_444444"-->
+    <!--android:textSize="14sp"-->
+    <!--tools:ignore="HardcodedText"/>-->
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="10dp"-->
+    <!--android:background="@color/cl_eee"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/cl_white"-->
+    <!--android:paddingTop="15dp"-->
+    <!--android:paddingRight="15dp"-->
+    <!--android:paddingBottom="15dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_title2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:drawableLeft="@drawable/title_drawable"-->
+    <!--android:drawablePadding="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:includeFontPadding="false"-->
+    <!--android:maxLines="1"-->
+    <!--android:paddingLeft="2dp"-->
+    <!--android:text="同类推荐"-->
+    <!--android:textColor="@color/cl_222222"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold"/>-->
+
+    <!--</RelativeLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"/>
+</LinearLayout>

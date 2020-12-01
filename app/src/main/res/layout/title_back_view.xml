@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:paddingBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32.5dp"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:id="@+id/rl_left_click"
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_title_back"
+                    style="@style/TitleBtnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_detail_back"
+                    android:shadowColor="@color/cl_black"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="            "
+                    android:textColor="@drawable/sel_title_bar_black_text"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_title_left"
+                    android:layout_width="32.5dp"
+                    android:layout_height="32.5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_detail_back"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title_title"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:text=""
+                android:textColor="@drawable/sel_title_bar_black_text"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_right_click"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/tv_title_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|right"
+                    android:text="確定"
+                    android:textColor="@drawable/sel_title_bar_black_text"
+                    android:textSize="18dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_title_right_home"
+                    android:layout_width="32.5dp"
+                    android:layout_height="32.5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_detail_right1"
+                    android:visibility="invisible"/>
+                <!--如果还有其他按钮,可以继续添加-->
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tab234_title_layout"/>
+
+    <fragment
+        android:id="@+id/selector_fragment"
+        android:name="com.my.mymh.ui.cartoonSelectFragment.SelectorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/selector_fragment"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/cl_eee"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/cl_white"
+        android:visibility="gone"/>
+
+    <include
+        layout="@layout/fresh_recycle_view_layout"
+        android:paddingBottom="10dp"/>
+</LinearLayout>

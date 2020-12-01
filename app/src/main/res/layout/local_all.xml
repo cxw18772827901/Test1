@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.my.mymh.wedjet.swipe.SwipeMenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingTop="20dp"
+            android:singleLine="true"
+            android:text="已全部加载完毕啦~"
+            android:textColor="@color/cl_999999"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</com.my.mymh.wedjet.swipe.SwipeMenuLayout>

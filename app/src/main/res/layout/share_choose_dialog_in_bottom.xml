@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/bottom_img_sel"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="分享"
+        android:textColor="@color/cl_333333"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/ll_share_to_qq_f"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <com.my.mymh.wedjet.CircleImageView
+                android:id="@+id/iv_share_to_qq_f"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/share_to_qq_friend"/>
+
+            <TextView
+                style="@style/zhubo_direct_tv"
+                android:text="QQ好友"
+                android:textColor="@color/cl_666"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_share_to_qq_c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.my.mymh.wedjet.CircleImageView
+                android:id="@+id/iv_share_to_qq_c"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/share_to_qq_friend_circle"/>
+
+            <TextView
+                style="@style/zhubo_direct_tv"
+                android:text="QQ空间"
+                android:textColor="@color/cl_666"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_share_to_wx_f"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.my.mymh.wedjet.CircleImageView
+                android:id="@+id/iv_share_to_wx_f"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/share_to_wx_friend"/>
+
+            <TextView
+                style="@style/zhubo_direct_tv"
+                android:text="微信好友"
+                android:textColor="@color/cl_666"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_share_to_wx_c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.my.mymh.wedjet.CircleImageView
+                android:id="@+id/iv_share_to_wx_c"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/share_to_wx_friend_circle"/>
+
+            <TextView
+                android:id="@+id/tv_mute"
+                style="@style/zhubo_direct_tv"
+                android:text="微信朋友圈"
+                android:textColor="@color/cl_666"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/bottom_img_sel"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:text="其他"
+        android:textColor="@color/cl_333333"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText,RtlHardcoded"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cl_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="4"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/ll_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <com.my.mymh.wedjet.CircleImageView
+                android:id="@+id/iv_collect"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_collect"/>
+
+            <TextView
+                style="@style/zhubo_direct_tv"
+                android:text="收藏"
+                android:textColor="@color/cl_666"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_error"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <com.my.mymh.wedjet.CircleImageView
+                android:id="@+id/iv_error"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_error"/>
+
+            <TextView
+                style="@style/zhubo_direct_tv"
+                android:text="报错"
+                android:textColor="@color/cl_666"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

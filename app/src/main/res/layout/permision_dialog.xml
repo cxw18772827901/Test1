@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/permision_dialog_shape"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:id="@+id/tv_permision_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:maxLines="3"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="标题"
+            android:textColor="@color/cl_444444"
+            android:textSize="17sp"
+            android:visibility="visible"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:text="描述"
+            android:textColor="@color/cl_444444"
+            android:textSize="17sp"
+            android:typeface="serif"
+            android:visibility="gone"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/tv_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/common_check_sel"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:padding="10dp"
+            android:text="不在提醒"
+            android:textColor="@color/cl_999999"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/cl_eee"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/bt_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消授权"
+                android:textColor="#bbb"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/cl_eee"/>
+
+            <TextView
+                android:id="@+id/bt_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="允许授权"
+                android:textColor="#319bd2"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

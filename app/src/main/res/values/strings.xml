@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">美吖漫画</string>
+
+    <string name="minnum">最少选择一张图片</string>
+    <string name="maxnum">最多选择%1$d张图片</string>
+    <string name="all_images">所有图片</string>
+    <string name="sd_disable">SD卡不可用</string>
+
+    <string name="image">图片</string>
+    <string name="takephoto">拍照</string>
+
+    <string name="confirm_format">%1$s(%2$d/%3$d)</string>
+    <string name="confirm">确定</string>
+
+    <string name="open_camera_failure">打开相机失败</string>
+
+    <string name="permission_storage_denied">请打开存储空间权限</string>
+
+    <string name="permission_camera_denied">请打开相关权限</string>
+    <string name="delete">删除</string>
+
+    <!--刷新-->
+    <string name="srl_header_pulling">下拉可以刷新</string>
+    <string name="srl_header_refreshing">正在刷新…</string>
+    <string name="srl_header_loading">正在加载…</string>
+    <string name="srl_header_release">释放立即刷新</string>
+    <string name="srl_header_finish">刷新完成</string>
+    <string name="srl_header_failed">刷新失败</string>
+    <string name="srl_header_update">上次更新 M-d HH:mm</string>
+    <string name="srl_header_secondary">释放进入二楼</string>
+
+    <string name="srl_footer_pulling">上拉加载更多</string>
+    <string name="srl_footer_release">释放立即加载</string>
+    <string name="srl_footer_loading">正在加载…</string>
+    <string name="srl_footer_refreshing">正在刷新…</string>
+    <string name="srl_footer_finish">加载完成</string>
+    <string name="srl_footer_failed">加载失败</string>
+    <string name="srl_footer_nothing">没有更多数据了</string>
+
+    <string name="srl_content_empty">SmartRefreshLayout中没有找到内容视图。您是否忘记在xml布局文件中添加？</string>
+    <string name="srl_component_falsify" formatted="false">%s 虚假区域\n代表运行时拖动的高度【%.1fdp】 \n而不会显示任何东西</string>
+    <!--刷新header-->
+    <string name="fgh_mask_top_pull">下拉开始游戏!</string>
+    <string name="fgh_mask_top_release">释放立刻开始!</string>
+    <string name="fgh_mask_bottom">上下滑动控制游戏</string>
+
+    <string name="fgh_text_game_over">游戏结束</string>
+    <string name="fgh_text_loading">玩个游戏解解闷</string>
+    <string name="fgh_text_loading_finish">刷新完成</string>
+    <string name="fgh_text_loading_failed">刷新失败</string>
+    <string name="tv_back">返回</string>
+    <string name="load_more">查看更多~</string>
+    <string name="cancel">取消</string>
+    <string name="care_mini">保存二维码后，前往微信扫描，即可关注被窝看书小程序。</string>
+    <string name="save_qr">保存二维码</string>
+    <string name="str_listener">快加入我们和最有趣的小伙伴一起讨论交流吧！QQ群：723879293（点击即可复制）</string>
+</resources>

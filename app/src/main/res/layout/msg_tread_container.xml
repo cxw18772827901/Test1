@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/retro_action_bg_sel"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <RadioButton
+            android:id="@+id/rb_received"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/retro_action_tv_left_bg_sel"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="12.5dp"
+            android:paddingRight="10dp"
+            android:text="产品建议"
+            android:textColor="@color/retro_action_tv_color_sel"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,RtlHardcoded"/>
+
+        <RadioButton
+            android:id="@+id/rb_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/retro_action_right_bg_sel"
+            android:button="@null"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="12.5dp"
+            android:text="作品补全"
+            android:textColor="@color/retro_action_tv_color_sel"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText,RtlHardcoded"/>
+    </RadioGroup>
+
+    <!-- <View
+         android:layout_width="2dp"
+         android:layout_height="30dp"
+         android:layout_gravity="center"
+         android:background="#3582D4"/>-->
+</FrameLayout>

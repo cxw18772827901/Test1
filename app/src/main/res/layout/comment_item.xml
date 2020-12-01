@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cl_white"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="2.5dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="2.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <com.my.mymh.wedjet.RoundImageView
+            android:id="@+id/iv_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_defult_header"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="绕弯儿翁入围热无热翁"
+            android:textColor="@color/cl_888"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="绕弯儿翁入围热无热翁"
+            android:textColor="@color/cl_888"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.5dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="2.5dp"
+        android:maxLines="4"
+        android:text="绕弯儿翁入围热无热翁绕弯儿翁入围热无热翁绕弯儿翁入围热无热翁绕弯儿翁入围热无热翁绕弯儿翁入围热无热翁绕弯儿翁入围热无热翁绕弯儿翁入围热无热翁绕弯儿翁入围热无热翁绕弯儿翁入围热无热翁"
+        android:textColor="@color/cl_444444"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/cl_eee"/>
+</LinearLayout>

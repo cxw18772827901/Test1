@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.hgd.hgdcomic.wedjet.swipe.SwipeMenuLayout-->
+<!--android:id="@+id/swipe_menu_layout"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="127dp"-->
+<!--android:clickable="true"-->
+<!--app:ios="false"-->
+<!--app:leftSwipe="true"-->
+<!--app:swipeEnable="true">-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_view"
+    android:layout_width="match_parent"
+    android:layout_height="127dp"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="126.5dp"
+        android:background="@color/cl_white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/iv_sel"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/choose_sel"/>
+        <!--image-->
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="95dp">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_holder1"/>
+
+            <!-- <TextView
+                 android:id="@+id/tv_num"
+                 android:layout_width="match_parent"
+                 android:layout_height="30dp"
+                 android:layout_gravity="bottom"
+                 android:background="@color/cl_black_half"
+                 android:gravity="center"
+                 android:includeFontPadding="false"
+                 android:maxLines="1"
+                 android:text="第50话"
+                 android:textColor="@color/cl_white"
+                 android:textSize="14sp"/>-->
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="约定的梦幻岛"
+                android:textColor="@color/cl_222222"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/tv_update_iv_sel"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="更新到55话"
+                android:textColor="@color/tv_update_color_sel"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_read_position"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="上次看到 : 50话"
+                android:textColor="@color/cl_666"
+                android:textSize="13sp"/>
+
+            <!--<TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="约定的梦幻岛,妈妈说外面的世界好可怕..."
+                android:textColor="@color/cl_999999"/>-->
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:drawableTop="@drawable/ic_book"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:includeFontPadding="false"-->
+        <!--android:maxLines="1"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:text="续看"-->
+        <!--android:textColor="@color/cl_main_red"-->
+        <!--android:textSize="13sp"/>-->
+    </LinearLayout>
+
+    <include layout="@layout/line"/>
+</LinearLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_delete"-->
+    <!--android:layout_width="75dp"-->
+    <!--android:layout_height="127dp"-->
+    <!--android:background="@color/cl_999999"-->
+    <!--android:gravity="center"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="@string/delete"-->
+    <!--android:textColor="@color/cl_white"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--<TextView
+        android:id="@+id/tv_delete1"
+        android:layout_width="75dp"
+        android:layout_height="127dp"
+        android:background="@color/cl_999999"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/delete"
+        android:textColor="@color/cl_white"
+        android:textSize="18sp"/>-->
+    <!--</com.hgd.hgdcomic.wedjet.swipe.SwipeMenuLayout>-->

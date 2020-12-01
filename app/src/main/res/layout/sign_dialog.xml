@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/tv_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/x_bg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLength="1"
+                android:text="x"
+                android:textColor="@color/cl_white"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:background="@color/cl_white"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-60dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_sign_header"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/tv_desc_bg"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="以下任务任选其一完成"
+                android:textColor="@color/cl_white"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_sign_body"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:text="打开下方小程序，今日即可免费观看全部内容。"
+                android:textColor="@color/cl_white"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_mini_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="被窝吐槽"
+                android:textColor="@color/cl_white"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/tv_mini"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_sign_btn_sel"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:text="打开小程序"
+                android:textColor="@color/cl_white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"/>
+            <!--android:textColor="#f5522e"-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_sign_footer"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:text="打开下方app，今日即可免费观看全部内容。"
+                android:textColor="@color/cl_white"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_tc_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="匿名吐槽平台"
+                android:textColor="@color/cl_white"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_sign_btn_sel"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:paddingTop="5dp"
+                android:text="打开app"
+                android:textColor="@color/cl_white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

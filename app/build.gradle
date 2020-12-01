@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+
+bugly {
+    appId = '1d736a6f5e' // 注册时分配的App ID
+    appKey = '38796fd9-6c8b-44b2-a08a-ca206d13e009' // 注册时分配的App Key
+}
+android {
+    compileSdkVersion 26
+    //noinspection GradleDependency
+//    buildToolsVersion '28.0.2'
+    defaultConfig {
+        applicationId "com.my.mymh"
+        minSdkVersion 16
+        //noinspection ExpiringTargetSdkVersion
+        targetSdkVersion 26
+        versionCode 1001
+        versionName "1.001"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //将jnilibs下文件统一放到libs下面,添加指引
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    signingConfigs {
+        debug {
+            storeFile file("../cartoon.keystore")
+            storePassword "123456"
+            keyAlias "123456"
+            keyPassword "123456"
+            v2SigningEnabled false
+        }
+        release {
+            storeFile file("../cartoon.keystore")
+            storePassword "123456"
+            keyAlias "123456"
+            keyPassword "123456"
+            v2SigningEnabled false
+        }
+    }
+}
+
+//指定arr文件的目录
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.tencent.bugly:crashreport:2.8.6.0'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //    implementation(name: 'adpoymer-3.5.12', ext: 'aar')
+    //    implementation(name: 'open_ad_sdk1.9.72', ext: 'aar')
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+    //noinspection GradleDependency
+    implementation 'com.qiniu:qiniu-android-sdk:7.3.13'
+    //65536
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.1.4'
+}

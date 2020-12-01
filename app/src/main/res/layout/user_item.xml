@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/user_item_bg"
+        android:orientation="vertical"
+        android:padding="15dp">-->
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/user_item_bg"
+        android:padding="15dp"
+        tools:ignore="UselessParent">
+
+        <com.my.mymh.wedjet.RoundImageView
+            android:id="@+id/iv_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_defult_header"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:drawableRight="@drawable/ic_gender_sel"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:text="杀死一只知更鸟"
+            android:textColor="@color/cl_222222"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam,RtlHardcoded"/>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:ignore="RelativeOverlap,RtlHardcoded">
+
+            &lt;!&ndash;<TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="51%"
+                android:textColor="@color/cl_main_red"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText"/>&ndash;&gt;
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="当前进度"
+                android:textColor="@color/cl_222222"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText"/>
+        </LinearLayout>-->
+        <!--<TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="ta的收藏：4"
+            android:textColor="@color/cl_222222"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText"/>-->
+    </RelativeLayout>
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/progressBar"-->
+    <!--style="?android:attr/progressBarStyleHorizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="4dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:max="100"-->
+    <!--android:progress="80"-->
+    <!--android:progressDrawable="@drawable/progressbar"/>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

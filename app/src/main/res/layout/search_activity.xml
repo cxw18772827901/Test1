@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_eee"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/cl_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/search_bg"
+                android:cursorVisible="false"
+                android:drawableLeft="@drawable/ic_search_s"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:hint="搜索漫画名、作者"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="@color/cl_444444"
+                android:textColorHint="@color/cl_999999"
+                android:textCursorDrawable="@drawable/ic_et_show"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="right|center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="7.5dp"
+                android:paddingTop="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_search_delete"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="取消"
+            android:textColor="@color/cl_222222"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/white_theme_trans"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cl_f0f0f0">
+        <!--搜索结果-->
+        <!--<ListView-->
+        <!--android:id="@+id/view1_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:divider="@color/cl_eee"-->
+        <!--android:dividerHeight="1dp"-->
+        <!--android:listSelector="@android:color/transparent"-->
+        <!--android:overScrollMode="never"-->
+        <!--android:scrollbars="none"-->
+        <!--android:visibility="gone"/>-->
+        <FrameLayout
+            android:id="@+id/view1_data_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/fresh_list_view_layout"/>
+        </FrameLayout>
+        <!--历史记录-->
+        <LinearLayout
+            android:id="@+id/view2_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cl_f0f0f0"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="历史记录"
+                android:textColor="@color/cl_666"
+                android:textSize="13sp"/>
+
+            <com.my.mymh.wedjet.flowlayout.FlowLayout
+                android:id="@+id/flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+        <!--无搜索结果记录-->
+        <FrameLayout
+            android:id="@+id/view3_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cl_f0f0f0"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_no_data"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_f0f0f0"
+    android:orientation="vertical">
+
+    <!--(๑•̀ㅂ•́)و-->
+    <!--<EditText-->
+    <!--android:id="@+id/et_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@null"-->
+    <!--android:cursorVisible="false"-->
+    <!--android:gravity="left"-->
+    <!--android:hint="发送政治、暴力、色情及广告信息的用户，平台将对其施行永久封号处理！"-->
+    <!--android:inputType="text"-->
+    <!--android:lineSpacingExtra="2.5dp"-->
+    <!--android:padding="10dp"-->
+    <!--android:textColor="@color/cl_333333"-->
+    <!--android:textColorHint="@color/cl_999999"-->
+    <!--android:textCursorDrawable="@drawable/ic_et_show"-->
+    <!--android:textSize="15sp"-->
+    <!--tools:ignore="HardcodedText,RtlHardcoded"/>-->
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:gravity="left"
+        android:hint="发送政治、暴力、色情及广告信息的用户，平台将对其施行永久封号处理。"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="2.5dp"
+        android:maxLength="300"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/cl_333333"
+        android:textColorHint="@color/cl_999999"
+        android:textCursorDrawable="@drawable/ic_et_show"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,RtlHardcoded,TextFields"/>
+</LinearLayout>

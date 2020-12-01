@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/report_ll_bg"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_1"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/report_tv_bg"
+                    android:gravity="center"
+                    android:text="章节乱序"
+                    android:textColor="@color/report_tv_color"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
+
+                <TextView
+                    android:id="@+id/btn_2"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/report_tv_bg"
+                    android:gravity="center"
+                    android:text="缺少内容"
+                    android:textColor="@color/report_tv_color"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
+
+                <TextView
+                    android:id="@+id/btn_3"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/report_tv_bg"
+                    android:gravity="center"
+                    android:text="没有更新"
+                    android:textColor="@color/report_tv_color"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/btn_4"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/report_tv_bg"
+                    android:gravity="center"
+                    android:text="图片乱序"
+                    android:textColor="@color/report_tv_color"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
+
+                <!--<TextView
+                    android:id="@+id/btn_5"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/report_tv_bg"
+                    android:gravity="center"
+                    android:text="排版混乱"
+                    android:textColor="@color/report_tv_color"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>-->
+
+                <TextView
+                    android:id="@+id/btn_6"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/report_tv_bg"
+                    android:gravity="center"
+                    android:text="其他"
+                    android:textColor="@color/report_tv_color"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="备注："
+            android:textColor="@color/cl_666"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText"/>
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/report_ll_bg"
+            android:cursorVisible="true"
+            android:gravity="left|top"
+            android:hint="请描述您遇到的问题，谢谢！（120字以内）"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="2.5dp"
+            android:maxLength="120"
+            android:minHeight="120dp"
+            android:padding="10dp"
+            android:textColor="@color/cl_444444"
+            android:textColorHint="@color/cl_999999"
+            android:textCursorDrawable="@drawable/ic_et_show"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlHardcoded,TextFields"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="上传图片："
+            android:textColor="@color/cl_666"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <!--android:background="@drawable/choose_pic_bg">-->
+
+            <!--<ImageView-->
+            <com.my.mymh.wedjet.roundedimageview.CustomShapeImageView
+                android:id="@+id/iv_error"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_pic_holder"
+                app:borderColor="@color/cl_white"
+                app:imageBorderWidth="0dp"
+                app:onlyDrawBorder="false"
+                app:roundRadius="10dp"
+                app:shape="rectangle"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/iv_delete_photo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_margin="2.5dp"
+                android:src="@drawable/ic_search_delete"
+                android:visibility="invisible"
+                tools:ignore="ContentDescription,RtlHardcoded"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/commit_bg"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/cl_white"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText"/>
+    </LinearLayout>
+</ScrollView>

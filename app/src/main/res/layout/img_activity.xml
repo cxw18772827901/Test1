@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:orientation="vertical">
+
+        <com.my.mymh.wedjet.CircleImageView
+            android:id="@+id/iv1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:onClick="send"
+            android:src="@drawable/ic_album"
+            app:civ_border_color="#f00"
+            app:civ_border_overlay="true"
+            app:civ_border_width="2dp"
+            app:civ_fill_color="#0f0"/>
+
+        <com.my.mymh.wedjet.roundedimageview.CustomShapeImageView
+            android:id="@+id/iv2"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:borderColor="@color/colorAccent"
+            app:imageBorderWidth="2dp"
+            app:onlyDrawBorder="false"
+            app:shape="circle"/>
+        <!--android:src="@drawable/a"-->
+
+        <com.my.mymh.wedjet.roundedimageview.CustomShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:borderColor="@android:color/holo_red_dark"
+            app:imageBorderWidth="2dp"
+            app:leftBottomRadius="10dp"
+            app:leftTopRadius="30dp"
+            app:onlyDrawBorder="false"
+            app:rightBottomRadius="15dp"
+            app:shape="rectangle"/>
+        <!--android:src="@drawable/a"-->
+
+        <com.my.mymh.wedjet.roundedimageview.CustomShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:borderColor="@color/colorAccent"
+            app:imageBorderWidth="3dp"
+            app:onlyDrawBorder="false"
+            app:roundRadius="5dp"
+            app:shape="rectangle"/>
+        <!--android:src="@drawable/ab"-->
+
+        <com.my.mymh.wedjet.roundedimageview.CustomShapeImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:borderColor="@color/colorAccent"
+            app:imageBorderWidth="3dp"
+            app:onlyDrawBorder="false"
+            app:shape="arc"/>
+        <!--android:src="@drawable/ab"-->
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <!--android:src="@drawable/gif_header_repast"-->
+    </LinearLayout>
+</ScrollView>

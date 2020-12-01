@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/report_ll_bg"
+                android:cursorVisible="true"
+                android:gravity="left|top"
+                android:hint="留下您宝贵的建议，我们将提供更优质的服务！"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="2.5dp"
+                android:maxLength="250"
+                android:minHeight="320dp"
+                android:padding="10dp"
+                android:textColor="@color/cl_444444"
+                android:textColorHint="@color/cl_999999"
+                android:textCursorDrawable="@drawable/ic_et_show"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,RtlHardcoded,TextFields"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/commit_bg"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/cl_white"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText"/>
+    </LinearLayout>
+</ScrollView>
